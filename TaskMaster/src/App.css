@@ -1,0 +1,102 @@
+/* Base styles and centering */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  color: #495057;
+}
+
+/* Input and Form controls */
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #4dabf7;
+}
+
+/* Dropdown Selects */
+.select-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  outline: none;
+}
+
+select:focus {
+  border-color: #4dabf7;
+}
+
+/* Buttons */
+button {
+  background-color: #228be6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1c7ed6;
+}

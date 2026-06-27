@@ -1,0 +1,160 @@
+/* Custom modern font & smooth styling */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(135deg, #e0e8f5 0%, #f5f7fa 100%);
+  color: #2d3748;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("assets/backg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Glassmorphism Container Card */
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(160, 174, 192, 0.25),
+              0 1px 3px rgba(160, 174, 192, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+}
+
+/* Typography with better tracking and color weight */
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: orange;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: black;
+  margin: 0 0 2rem 0;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4a5568;
+  margin: 2rem 0 1rem 0;
+}
+
+/* Form Layout & Interactions */
+.form-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #3182ce;
+  background-color: whitesmoke;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+/* Premium styled dropdown selections */
+.select-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+select {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  background-color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4a5568;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+select:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+/* Dynamic Action Button */
+button {
+  background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+  color: white;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.2);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(49, 130, 206, 0.3);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.main-title {
+  color: '#4361ee'; /* This will now ONLY change Task Master! */
+}
+
+p {
+  color: yellow;
+}
+
+.progress-tracker {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(240, 78, 75);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: rgb(26, 219, 26);
+}
